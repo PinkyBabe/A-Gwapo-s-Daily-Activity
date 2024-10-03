@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GWAPOS</title>
+  <title>Welcome to a Gwapo's Day</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style2.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
 
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #007BFF;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
 <body>
 
-  <audio autoplay style="display: none;">
-    <source src="videoplayback.m4a" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <header>
-    <div class="container">
-      <h2>A Gwapo's Daily Activity</h2>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#" onclick="navigateTo('home')">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-btn"> Select A Gwapo</a>
-          <div class="dropdown-content">
-            <a href="ed.html">Eduardo Nieze</a>
-            <a href="odon.html">Realdjun Odon</a>
-            <a href="jonard.html">Jonard Pinalas</a>
-            <a href="jam.html">Jam Piodos</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="home" class="container">
-    <img class="pic" src="rizz.gif" alt="rizz.gif">
-  </main>
+  <div>
+    <h1>Are you ready to see what a gwapo does in a day?</h1>
+    <a href="reload.html" class="btn">See Now</a>
+  </div>
 
 </body>
-
 </html>
