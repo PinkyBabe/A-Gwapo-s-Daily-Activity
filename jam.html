@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,79 +9,148 @@
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 1],
-          ['Sleep(using messenger app to videocall with lalabs)',    7],
-          ['Play',     1]
-        ]);
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Sleeping', 7.4667],
+                ['Breakfast (with phone)', 0.4833],
+                ['Class (with desktop)', 5.3333],
+                ['Lunch/Break (using phone)', 0.7333],
+                ['Studying (using phone)', 3.05],
+                ['Frisbee', 1.5667],
+                ['Homework (using laptop)', 0.7667],
+                ['Dinner', 0.45],
+                ['Free time (using phone)', 1.6167]
+            ]);
 
-        var options = {
-          title: 'Daily Activities of Jam',
-          is3D: true,
-        };
+            var options = {
+                title: 'Daily Activities of Jam',
+                is3D: true,
+            };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-        chart.draw(data, options);
-      }
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+        }
     </script>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-  google.charts.load("current", {packages:["corechart"]});
-  google.charts.setOnLoadCallback(drawChart);
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ['Task', 'Hours per Day'],
-      ['Work',     11],
-      ['Eat',      2],
-      ['Commute',  2],
-      ['Watch TV', 1],
-      ['Sleep(using messenger app to videocall with lalabs)',    7],
-      ['Play',     1]
-    ]);
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['9:13 PM – 4:41 AM', 7.4667],
+                ['6:08 AM – 6:37 AM', 0.4833],
+                ['6:37 AM – 11:57 AM', 5.3333],
+                ['11:57 AM – 12:41 PM', 0.7333],
+                ['12:55 PM – 3:58 PM', 3.05],
+                ['4:22 PM – 5:56 PM', 1.5667],
+                ['6:03 PM – 6:49 PM', 0.7667],
+                ['6:03 PM – 6:49 PM', 0.45],
+                ['7:36 PM – 9:13 PM', 1.6167]
+            ]);
 
-    var options = {
-      title: 'Daily Activities of Jam',
-      is3D: true,
-    };
+            var options = {
+                title: 'Time Summary',
+                is3D: true,
+            };
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart_3d 2'));
-    chart.draw(data, options);
-  }
-</script>
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d 2'));
+            chart.draw(data, options);
+        }
+    </script>
 </head>
+
 <body>
-  <header>
-    <div class="container">
-        <h2>A Gwapo's Daily Activity</h2>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a class="dropdown-btn"> Select A Gwapo</a>
-                <div class="dropdown-content">
-                    
+    <header>
+        <div class="container">
+            <h2>A Gwapo's Daily Activity</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-btn"> Select A Gwapo</a>
+                    <div class="dropdown-content">
+
                         <a href="ed.html">Eduardo Nieze</a>
                         <a href="odon.html">Realdjun Odon</a>
                         <a href="jonard.html">Jonard Pinalas</a>
                         <a href="jam.html">Jam Piodos</a>
-                    
-                </div>
-            </li>
-        </ul>
-    </nav>
-</header>
+
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <center>
-    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
-    <div id="piechart_3d 2" style="width: 900px; height: 500px;"></div>
+        <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+        <div id="piechart_3d 2" style="width: 900px; height: 500px;"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Activity</th>
+                    <th>Time Range</th>
+                    <th>Number of Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Sleeping</strong></td>
+                    <td>9:13 PM – 4:41 AM</td>
+                    <td>7.4667</td>
+                </tr>
+                <tr>
+                    <td><strong>Breakfast (with phone)</strong></td>
+                    <td>6:08 AM – 6:37 AM</td>
+                    <td>0.4833</td>
+                </tr>
+                <tr>
+                    <td><strong>Class (with desktop)</strong></td>
+                    <td>6:37 AM – 11:57 AM</td>
+                    <td>5.3333</td>
+                </tr>
+                <tr>
+                    <td><strong>Lunch/Break (using phone)</strong></td>
+                    <td>11:57 AM – 12:41 PM</td>
+                    <td>0.7333</td>
+                </tr>
+                <tr>
+                    <td><strong>Studying (using phone)</strong></td>
+                    <td>12:55 PM – 3:58 PM</td>
+                    <td>3.05</td>
+                </tr>
+                <tr>
+                    <td><strong>Frisbee</strong></td>
+                    <td>4:22 PM – 5:56 PM</td>
+                    <td>1.5667</td>
+                </tr>
+                <tr>
+                    <td><strong>Homework (using laptop)</strong></td>
+                    <td>6:03 PM – 6:49 PM</td>
+                    <td>0.7667</td>
+                </tr>
+                <tr>
+                    <td><strong>Dinner</strong></td>
+                    <td>7:09 PM – 7:36 PM</td>
+                    <td>0.45</td>
+                </tr>
+                <tr>
+                    <td><strong>Free time (using phone)</strong></td>
+                    <td>7:36 PM – 9:13 PM</td>
+                    <td>1.6167</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><strong>24 Hours</strong></td>
+                </tr>
+            </tbody>
+        </table>
     </center>
 </body>
+
 </html>

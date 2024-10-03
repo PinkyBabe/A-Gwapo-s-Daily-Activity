@@ -1,86 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GWAPOS</title>
-    <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GWAPOS</title>
+  <link rel="stylesheet" href="style2.css">
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 1],
-          ['Sleep(using messenger app to videocall with lalabs)',    7],
-          ['Play',     1]
-        ]);
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Facebook (using phone)', 0.0833],
+        ['TikTok (using phone)', 0.3333],
+        ['Meta (Facebook, Messenger using phone)', 0.0833],
+        ['Scrolling Facebook using phone', 0.25],
+        ['Facebook using phone', 0.3333],
+        ['Desktop - websites (Chrome, YouTube, Canva)', 0.4167],
+        ['Back to desktop', 1.1667],
+        ['Review for exam (using phone)', 0.5],
+        ['Schoolwork (using desktop)', 1.25],
+        ['Playing online games', 1.5],
+        ['Playing online games using desktop', 1.0],
+        ['Reading manga using phone', 0.25],
+        ['YouTube using phone', 0.3333],
+        ['Nap', 1.5],
+        ['Break', 0.1667],
+        ['Nap', 1.3333],
+        ['Dinner', 0.1667],
+        ['Sleep', 7.6667],
+        ['Class', 5.67]
+      ]);
 
-        var options = {
-          title: 'Daily Activities of Jonard',
-          is3D: true,
-        };
+      var options = {
+        title: 'Daily Activities of Jonard',
+        is3D: true,
+      };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-        chart.draw(data, options);
-      }
-    </script>
+      var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+      chart.draw(data, options);
+    }
+  </script>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-  google.charts.load("current", {packages:["corechart"]});
-  google.charts.setOnLoadCallback(drawChart);
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ['Task', 'Hours per Day'],
-      ['Work',     11],
-      ['Eat',      2],
-      ['Commute',  2],
-      ['Watch TV', 1],
-      ['Sleep(using messenger app to videocall with lalabs)',    7],
-      ['Play',     1]
-    ]);
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['6:10 AM – 6:15 AM', 0.0833],
+        ['6:40 PM – 7:00 PM', 0.3333],
+        ['7:25 PM – 7:30 PM', 0.0833],
+        ['3:00 PM – 3:15 PM', 0.25],
+        ['4:55 PM – 5:15 PM', 0.3333],
+        ['7:00 PM – 7:25 PM', 0.4167],
+        ['9:10 PM – 10:20 PM', 1.1667],
+        ['7:00 AM – 7:30 AM', 0.5],
+        ['5:25 PM – 6:40 PM', 1.25],
+        ['9:00 AM – 10:40 AM', 1.5],
+        ['3:50 PM – 4:50 PM', 1.0],
+        ['3:15 PM – 3:30 PM', 0.25],
+        ['3:30 PM – 3:50 PM', 0.3333],
+        ['1:30 PM – 3:00 PM', 1.5],
+        ['5:15 PM – 5:25 PM', 0.1667],
+        ['7:30 PM – 8:50 PM', 1.3333],
+        ['8:50 PM – 9:00 PM', 0.1667],
+        ['10:20 PM – 6:00 AM', 7.6667],
+        ['Rest of the Time', 5.67],
+      ]);
 
-    var options = {
-      title: 'Time Summary',
-      is3D: true,
-    };
+      var options = {
+        title: 'Time Summary',
+        is3D: true,
+      };
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart_3d 2'));
-    chart.draw(data, options);
-  }
-</script>
+      var chart = new google.visualization.PieChart(document.getElementById('piechart_3d 2'));
+      chart.draw(data, options);
+    }
+  </script>
 </head>
+
 <body>
   <header>
     <div class="container">
-        <h2>A Gwapo's Daily Activity</h2>
+      <h2>A Gwapo's Daily Activity</h2>
     </div>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a class="dropdown-btn"> Select A Gwapo</a>
-                <div class="dropdown-content">
-                    
-                        <a href="ed.html">Eduardo Nieze</a>
-                        <a href="odon.html">Realdjun Odon</a>
-                        <a href="jonard.html">Jonard Pinalas</a>
-                        <a href="jam.html">Jam Piodos</a>
-                    
-                </div>
-            </li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-btn"> Select A Gwapo</a>
+          <div class="dropdown-content">
+
+            <a href="ed.html">Eduardo Nieze</a>
+            <a href="odon.html">Realdjun Odon</a>
+            <a href="jonard.html">Jonard Pinalas</a>
+            <a href="jam.html">Jam Piodos</a>
+
+          </div>
+        </li>
+      </ul>
     </nav>
-</header>
-    <center>
+  </header>
+  <center>
     <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
     <div id="piechart_3d 2" style="width: 900px; height: 500px;"></div>
-    </center>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Activity</th>
+          <th>Time Range</th>
+          <th>Number of Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>SOCIAL MEDIA</strong></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Facebook (using phone)</td>
+          <td>6:10 AM - 6:15 AM</td>
+          <td>0.0833</td>
+        </tr>
+        <tr>
+          <td>TikTok (using phone)</td>
+          <td>6:40 PM - 7:00 PM</td>
+          <td>0.3333</td>
+        </tr>
+        <tr>
+          <td>Meta (Facebook, Messenger using phone)</td>
+          <td>7:25 PM - 7:30 PM</td>
+          <td>0.0833</td>
+        </tr>
+        <tr>
+          <td>Scrolling Facebook using phone</td>
+          <td>3:00 PM - 3:15 PM</td>
+          <td>0.25</td>
+        </tr>
+        <tr>
+          <td>Facebook using phone</td>
+          <td>4:55 PM - 5:15 PM</td>
+          <td>0.3333</td>
+        </tr>
+        <tr>
+          <td><strong>Total Social Media Time</strong></td>
+          <td></td>
+          <td><strong>1.0833</strong></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><strong>Total Duration: 1 hour 5 min</strong></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><strong>SCHOOLWORK</strong></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Desktop - websites (Chrome, YouTube, Canva)</td>
+          <td>7:00 PM - 7:25 PM</td>
+          <td>0.4167</td>
+        </tr>
+        <tr>
+          <td>Back to desktop</td>
+          <td>9:10 PM - 10:20 PM</td>
+          <td>1.1667</td>
+        </tr>
+        <tr>
+          <td>Review for exam (using phone)</td>
+          <td>7:00 AM - 7:30 AM</td>
+          <td>0.5</td>
+        </tr>
+        <tr>
+          <td>Schoolwork (using desktop)</td>
+          <td>5:25 PM - 6:40 PM</td>
+          <td>1.25</td>
+        </tr>
+        <tr>
+          <td><strong>Total Schoolwork Time</strong></td>
+          <td></td>
+          <td><strong>3.3333</strong></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><strong>Total Duration: 3 hours 20 min</strong></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><strong>GAMING</strong></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Playing online games</td>
+          <td>9:00 AM - 10:40 AM</td>
+          <td>1.5</td>
+        </tr>
+        <tr>
+          <td>Playing online games using desktop</td>
+          <td>3:50 PM - 4:50 PM</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td><strong>Total Gaming Time</strong></td>
+          <td></td>
+          <td><strong>2.5</strong></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><strong>Total Duration: 2 hours 30 min</strong></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><strong>ENTERTAINMENT</strong></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Reading manga using phone</td>
+          <td>3:15 PM - 3:30 PM</td>
+          <td>0.25</td>
+        </tr>
+        <tr>
+          <td>YouTube using phone</td>
+          <td>3:30 PM - 3:50 PM</td>
+          <td>0.3333</td>
+        </tr>
+        <tr>
+          <td><strong>Total Entertainment Time</strong></td>
+          <td></td>
+          <td><strong>0.5833</strong></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><strong>Total Duration: 35 min</strong></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><strong>EXCLUDED HOURS</strong></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Nap</td>
+          <td>1:30 PM - 3:00 PM</td>
+          <td>1.5</td>
+        </tr>
+        <tr>
+          <td>Break</td>
+          <td>5:15 PM - 5:25 PM</td>
+          <td>0.1667</td>
+        </tr>
+        <tr>
+          <td>Nap</td>
+          <td>7:30 PM - 8:50 PM</td>
+          <td>1.3333</td>
+        </tr>
+        <tr>
+          <td>Dinner</td>
+          <td>8:50 PM - 9:00 PM</td>
+          <td>0.1667</td>
+        </tr>
+        <tr>
+          <td>Sleep</td>
+          <td>10:20 PM - 6:00 AM</td>
+          <td>7.6667</td>
+        </tr>
+        <tr></tr>
+          <td>Class</td>
+          <td>Rest of the time</td>
+          <td>5.67</td>
+        </tr>
+        <tr>
+          <td><strong>Total Excluded Hours</strong></td>
+          <td></td>
+          <td><strong>10.8333</strong></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><strong>Total Duration: 10 hours 50 min</strong></td>
+          <td><strong>24 hours</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </center>
 </body>
+
 </html>

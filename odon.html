@@ -1,86 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GWAPOS</title>
-    <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GWAPOS</title>
+  <link rel="stylesheet" href="style2.css">
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 1],
-          ['Sleep(using messenger app to videocall with lalabs)',    7],
-          ['Play',     1]
-        ]);
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Sleeping', 7.0],
+        ['Checking Messenger (using phone)', 1.0],
+        ['Studying Lessons (using laptop)', 1.0],
+        ['Playing Mobile Games', 1.0],
+        ['Watching Mukbang Vlogs (using phone)', 1.0],
+        ['Listening to Music (using phone)', 1.0],
+        ['Taking Pictures and Videos', 1.0],
+        ['Editing Pictures and Videos (using laptop)', 1.0],
+        ['Live Streaming (using phone)', 2.0],
+        ['Playing Scatter (using phone)', 2.0],
+        ['Research for Assignments (using laptop)', 1.0],
+        ['Checking Social Media (using phone)', 1.0],
+        ['Searching Orders on Shopee and TikTok (using phone)', 1.0]
+      ]);
 
-        var options = {
-          title: 'Daily Activities of Realdjun',
-          is3D: true,
-        };
+      var options = {
+        title: 'Daily Activities of Realdjun',
+        is3D: true,
+      };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-        chart.draw(data, options);
-      }
-    </script>
+      var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+      chart.draw(data, options);
+    }
+  </script>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-  google.charts.load("current", {packages:["corechart"]});
-  google.charts.setOnLoadCallback(drawChart);
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ['Task', 'Hours per Day'],
-      ['Work',     11],
-      ['Eat',      2],
-      ['Commute',  2],
-      ['Watch TV', 1],
-      ['Sleep(using messenger app to videocall with lalabs)',    7],
-      ['Play',     1]
-    ]);
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Rest of the time', 7.0],
+        ['5:30 AM – 6:30 AM', 1.0],
+        ['6:30 AM – 7:30 AM', 1.0],
+        ['9:00 AM – 10:00 AM', 1.0],
+        ['12:00 PM – 1:00 PM', 1.0],
+        ['2:00 PM – 3:00 PM', 1.0],
+        ['4:00 PM – 5:00 PM', 1.0],
+        ['5:30 PM – 6:30 PM', 1.0],
+        ['6:30 PM – 8:30 PM', 2.0],
+        ['8:30 PM – 10:30 PM', 2.0],
+        ['10:30 PM – 11:30 PM', 1.0],
+        ['11:30 PM – 12:30 AM', 1.0],
+        ['12:30 AM – 1:30 AM', 1.0]
+      ]);
 
-    var options = {
-      title: 'Time Summary',
-      is3D: true,
-    };
+      var options = {
+        title: 'Time Summary',
+        is3D: true,
+      };
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart_3d 2'));
-    chart.draw(data, options);
-  }
-</script>
+      var chart = new google.visualization.PieChart(document.getElementById('piechart_3d 2'));
+      chart.draw(data, options);
+    }
+  </script>
 </head>
+
 <body>
   <header>
     <div class="container">
-        <h2>A Gwapo's Daily Activity</h2>
+      <h2>A Gwapo's Daily Activity</h2>
     </div>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a class="dropdown-btn"> Select A Gwapo</a>
-                <div class="dropdown-content">
-                    
-                        <a href="ed.html">Eduardo Nieze</a>
-                        <a href="odon.html">Realdjun Odon</a>
-                        <a href="jonard.html">Jonard Pinalas</a>
-                        <a href="jam.html">Jam Piodos</a>
-                    
-                </div>
-            </li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-btn"> Select A Gwapo</a>
+          <div class="dropdown-content">
+
+            <a href="ed.html">Eduardo Nieze</a>
+            <a href="odon.html">Realdjun Odon</a>
+            <a href="jonard.html">Jonard Pinalas</a>
+            <a href="jam.html">Jam Piodos</a>
+
+          </div>
+        </li>
+      </ul>
     </nav>
-</header>
-    <center>
+  </header>
+  <center>
     <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
     <div id="piechart_3d 2" style="width: 900px; height: 500px;"></div>
-    </center>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Activity</th>
+          <th>Time Range</th>
+          <th>Number of Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sleeping</td>
+          <td>1:30 AM – 5:30 AM</td>
+          <td>7.0</td>
+        </tr>
+        <tr>
+          <td>Checking Messenger (using phone)</td>
+          <td>5:30 AM – 6:30 AM</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Studying Lessons (using laptop)</td>
+          <td>6:30 AM – 7:30 AM</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Playing Mobile Games</td>
+          <td>9:00 AM – 10:00 AM</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Watching Mukbang Vlogs (using phone)</td>
+          <td>12:00 PM – 1:00 PM</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Listening to Music (using phone)</td>
+          <td>2:00 PM – 3:00 PM</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Taking Pictures and Videos</td>
+          <td>4:00 PM – 5:00 PM</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Editing Pictures and Videos (using laptop)</td>
+          <td>5:30 PM – 6:30 PM</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Live Streaming (using phone)</td>
+          <td>6:30 PM – 8:30 PM</td>
+          <td>2.0</td>
+        </tr>
+        <tr>
+          <td>Playing Scatter (using phone)</td>
+          <td>8:30 PM – 10:30 PM</td>
+          <td>2.0</td>
+        </tr>
+        <tr>
+          <td>Research for Assignments (using laptop)</td>
+          <td>10:30 PM – 11:30 PM</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Checking Social Media (using phone)</td>
+          <td>11:30 PM – 12:30 AM</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td>Searching Orders on Shopee and TikTok (using phone)</td>
+          <td>12:30 AM – 1:30 AM</td>
+          <td>1.0</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td><strong>24 hours</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </center>
 </body>
+
 </html>
