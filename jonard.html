@@ -8,6 +8,36 @@
   <link rel="stylesheet" href="style2.css">
 
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", { packages: ["corechart"] });
+  google.charts.setOnLoadCallback(drawChart);
+  
+  function drawChart() {
+    // Updated data, combining similar tasks
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Social Media (Facebook, TikTok, etc.)', 1.0833],  // Combined social media usage
+      ['Schoolwork (Desktop and Phone)', 3.3333],         // Combined schoolwork
+      ['Gaming', 2.5],                                    // Combined gaming activities
+      ['Entertainment (YouTube, Manga)', 0.5833],         // Combined entertainment activities
+      ['Nap/Rest', 2.8333],                               // Summed up naps
+      ['Dinner/Break', 0.3334],                           // Combined dinner and break
+      ['Sleep', 7.6667],                                  // Sleep
+      ['Class', 5.67]                                     // Class
+    ]);
+
+    var options = {
+      title: 'Daily Activities of Jonard',
+      is3D: true,
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+    chart.draw(data, options);
+  }
+</script>
+
+  
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
     google.charts.load("current", { packages: ["corechart"] });
     google.charts.setOnLoadCallback(drawChart);
@@ -40,7 +70,7 @@
         is3D: true,
       };
 
-      var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+      var chart = new google.visualization.PieChart(document.getElementById('piechart_3d 2'));
       chart.draw(data, options);
     }
   </script>
@@ -78,7 +108,7 @@
         is3D: true,
       };
 
-      var chart = new google.visualization.PieChart(document.getElementById('piechart_3d 2'));
+      var chart = new google.visualization.PieChart(document.getElementById('piechart_3d 3'));
       chart.draw(data, options);
     }
   </script>
@@ -109,7 +139,7 @@
   <center>
     <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
     <div id="piechart_3d 2" style="width: 900px; height: 500px;"></div>
-
+    <div id="piechart_3d 3" style="width: 900px; height: 500px;"></div>
     <table>
       <thead>
         <tr>
